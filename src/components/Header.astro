@@ -1,0 +1,82 @@
+---
+const currentPath = Astro.url.pathname;
+const navLinks = [
+  { href: '/', label: 'Home' },
+  { href: '/about', label: 'About' },
+  { href: '/services', label: 'Services' },
+  { href: '/contact', label: 'Contact' },
+];
+---
+
+<header class="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm border-b border-gray-100">
+  <nav class="mx-auto max-w-6xl px-6 py-4 flex items-center justify-between">
+    <a href="/" class="flex items-center gap-2 group">
+      <span class="inline-flex h-10 w-10 items-center justify-center rounded-lg bg-primary text-accent font-heading font-bold text-lg">N</span>
+      <span class="font-heading font-semibold text-primary text-lg hidden sm:inline">Nicholas.K</span>
+    </a>
+
+    <ul class="hidden md:flex items-center gap-8">
+      {navLinks.map(link => (
+        <li>
+          <a
+            href={link.href}
+            class:list={[
+              'text-sm font-medium transition-colors hover:text-secondary',
+              currentPath === link.href ? 'text-secondary' : 'text-gray-600',
+            ]}
+          >
+            {link.label}
+          </a>
+        </li>
+      ))}
+    </ul>
+
+    <a
+      href="/contact"
+      class="hidden md:inline-flex items-center gap-2 rounded-lg bg-secondary px-5 py-2.5 text-sm font-semibold text-white transition-all hover:bg-secondary/90 hover:shadow-lg"
+    >
+      Book a Call
+    </a>
+
+    <button
+      id="mobile-toggle"
+      class="md:hidden p-2 rounded-lg hover:bg-gray-100 transition-colors"
+      aria-label="Toggle menu"
+    >
+      <svg class="h-6 w-6 text-gray-700" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+        <path id="hamburger-icon" stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+      </svg>
+    </button>
+  </nav>
+
+  <div id="mobile-menu" class="hidden md:hidden border-t border-gray-100 bg-white">
+    <ul class="flex flex-col px-6 py-4 gap-3">
+      {navLinks.map(link => (
+        <li>
+          <a
+            href={link.href}
+            class:list={[
+              'block py-2 text-sm font-medium transition-colors',
+              currentPath === link.href ? 'text-secondary' : 'text-gray-600',
+            ]}
+          >
+            {link.label}
+          </a>
+        </li>
+      ))}
+      <li>
+        <a href="/contact" class="mt-2 block rounded-lg bg-secondary px-5 py-2.5 text-center text-sm font-semibold text-white">
+          Book a Call
+        </a>
+      </li>
+    </ul>
+  </div>
+</header>
+
+<script>
+  const toggle = document.getElementById('mobile-toggle');
+  const menu = document.getElementById('mobile-menu');
+  toggle?.addEventListener('click', () => {
+    menu?.classList.toggle('hidden');
+  });
+</script>

@@ -1,0 +1,161 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<BaseLayout title="Contact — Nicholas.K | Growth & Partnerships Advisor">
+  <Header />
+
+  <!-- Hero -->
+  <section class="bg-gradient-to-br from-primary via-dark to-primary pt-32 pb-16 md:pt-40 md:pb-20">
+    <div class="mx-auto max-w-6xl px-6">
+      <p class="text-sm font-semibold uppercase tracking-widest text-accent mb-4">Get in Touch</p>
+      <h1 class="font-heading text-4xl font-bold text-white md:text-5xl max-w-3xl">
+        Let's Start a Conversation
+      </h1>
+      <p class="mt-6 text-lg text-gray-300 max-w-2xl leading-relaxed">
+        Whether you have a specific challenge in mind or want to explore how partnerships can drive your growth, I'd love to hear from you.
+      </p>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="py-20 md:py-28">
+    <div class="mx-auto max-w-6xl px-6">
+      <div class="grid gap-12 lg:grid-cols-5">
+
+        <!-- Contact Info -->
+        <div class="lg:col-span-2 space-y-8">
+          <div>
+            <h2 class="font-heading text-2xl font-bold text-primary mb-6">Contact Information</h2>
+            <div class="space-y-6">
+              <div class="flex items-start gap-4">
+                <div class="inline-flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-lg bg-secondary/10 text-secondary">
+                  <svg class="h-5 w-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+                </div>
+                <div>
+                  <p class="text-sm font-semibold text-primary">Email</p>
+                  <a href="mailto:hello@nicholask.dev" class="text-sm text-muted hover:text-secondary transition-colors">hello@nicholask.dev</a>
+                </div>
+              </div>
+
+              <div class="flex items-start gap-4">
+                <div class="inline-flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-lg bg-secondary/10 text-secondary">
+                  <svg class="h-5 w-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M16 8a6 6 0 01-12 0 6 6 0 0112 0zM2 20.5A8.38 8.38 0 0010 16h0a8.38 8.38 0 008 4.5"/></svg>
+                </div>
+                <div>
+                  <p class="text-sm font-semibold text-primary">LinkedIn</p>
+                  <a href="https://linkedin.com/in/nicholask" target="_blank" rel="noopener noreferrer" class="text-sm text-muted hover:text-secondary transition-colors">linkedin.com/in/nicholask</a>
+                </div>
+              </div>
+
+              <div class="flex items-start gap-4">
+                <div class="inline-flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-lg bg-secondary/10 text-secondary">
+                  <svg class="h-5 w-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+                </div>
+                <div>
+                  <p class="text-sm font-semibold text-primary">Location</p>
+                  <p class="text-sm text-muted">Stockholm, Sweden (Remote-friendly)</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="rounded-2xl bg-gradient-to-br from-primary/5 to-secondary/10 p-8">
+            <h3 class="font-heading text-lg font-semibold text-primary mb-3">Free Discovery Call</h3>
+            <p class="text-sm text-muted leading-relaxed mb-4">
+              Not sure where to start? Book a free 30-minute call to discuss your goals and explore how I can help.
+            </p>
+            <p class="text-xs text-muted">No commitment required. Let's just talk.</p>
+          </div>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="lg:col-span-3">
+          <form
+            action="https://formspree.io/f/your-form-id"
+            method="POST"
+            class="rounded-2xl border border-gray-200 bg-white p-8 md:p-10 shadow-sm"
+          >
+            <h3 class="font-heading text-xl font-semibold text-primary mb-6">Send a Message</h3>
+
+            <div class="grid gap-5 sm:grid-cols-2">
+              <div>
+                <label for="name" class="block text-sm font-medium text-gray-700 mb-1.5">Full Name</label>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  required
+                  class="w-full rounded-lg border border-gray-300 px-4 py-2.5 text-sm text-gray-800 placeholder-gray-400 transition-colors focus:border-secondary focus:ring-1 focus:ring-secondary focus:outline-none"
+                  placeholder="Your name"
+                />
+              </div>
+              <div>
+                <label for="email" class="block text-sm font-medium text-gray-700 mb-1.5">Email</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  required
+                  class="w-full rounded-lg border border-gray-300 px-4 py-2.5 text-sm text-gray-800 placeholder-gray-400 transition-colors focus:border-secondary focus:ring-1 focus:ring-secondary focus:outline-none"
+                  placeholder="you@company.com"
+                />
+              </div>
+            </div>
+
+            <div class="mt-5">
+              <label for="company" class="block text-sm font-medium text-gray-700 mb-1.5">Company (optional)</label>
+              <input
+                type="text"
+                id="company"
+                name="company"
+                class="w-full rounded-lg border border-gray-300 px-4 py-2.5 text-sm text-gray-800 placeholder-gray-400 transition-colors focus:border-secondary focus:ring-1 focus:ring-secondary focus:outline-none"
+                placeholder="Your company name"
+              />
+            </div>
+
+            <div class="mt-5">
+              <label for="subject" class="block text-sm font-medium text-gray-700 mb-1.5">Subject</label>
+              <select
+                id="subject"
+                name="subject"
+                required
+                class="w-full rounded-lg border border-gray-300 px-4 py-2.5 text-sm text-gray-800 transition-colors focus:border-secondary focus:ring-1 focus:ring-secondary focus:outline-none"
+              >
+                <option value="" disabled selected>Select a topic</option>
+                <option value="partnership-strategy">Partnership Strategy</option>
+                <option value="growth-advisory">Growth Advisory</option>
+                <option value="workshop">Workshop / Training</option>
+                <option value="discovery-call">Free Discovery Call</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+
+            <div class="mt-5">
+              <label for="message" class="block text-sm font-medium text-gray-700 mb-1.5">Message</label>
+              <textarea
+                id="message"
+                name="message"
+                rows="5"
+                required
+                class="w-full rounded-lg border border-gray-300 px-4 py-2.5 text-sm text-gray-800 placeholder-gray-400 transition-colors focus:border-secondary focus:ring-1 focus:ring-secondary focus:outline-none resize-y"
+                placeholder="Tell me about your business and what you're looking for..."
+              ></textarea>
+            </div>
+
+            <button
+              type="submit"
+              class="mt-6 w-full rounded-lg bg-secondary px-6 py-3 text-sm font-semibold text-white transition-all hover:bg-secondary/90 hover:shadow-lg focus:ring-2 focus:ring-secondary focus:ring-offset-2 focus:outline-none"
+            >
+              Send Message
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <Footer />
+</BaseLayout>
