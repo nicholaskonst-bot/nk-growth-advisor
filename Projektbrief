@@ -1,66 +1,58 @@
-## **Projektbrief – Uppdatering av hemsida**
+NK Growth Advisory Platform
+Professional Portfolio & Consulting Hub
+Owner: Nicholas Konstantinidis
 
-### **Bakgrund**
+Role: Growth & Partnerships Advisor
 
-Den nuvarande hemsidan lanserades för cirka tre år sedan. Sedan dess har mottagningen utvecklats både i omfattning och arbetssätt. Verksamheten, erbjudandet och patienternas behov speglas inte längre fullt ut på hemsidan, och delar av innehållet är i behov av uppdatering.
+Target Audience: Tech Startups (Series A+), FMCG Brands, and Global Retailers.
 
-För att säkerställa att hemsidan korrekt representerar mottagningens verksamhet och upplevs som relevant, modern och tillförlitlig behöver den uppdateras. Målet är att skapa en webbplats som tydligt kommunicerar mottagningens erbjudande, ger rätt information och förenklar kontakten för både nya och befintliga patienter.
+🎯 Executive Summary
+This repository contains the source code for the professional consulting platform of Nicholas Konstantinidis. Transitioning from a career leading global expansions and strategic partnerships at Spotify, DeLaval, and British American Tobacco, this site serves as a high-conversion tool to bridge the gap between "Corporate Excellence" and "Startup Agility."
 
-### **Syfte**
+The platform is designed to demonstrate 15+ years of experience in scaling revenue engines, negotiating global deals, and navigating complex international markets.
 
-Syftet med projektet är att:
+🛠 Tech Stack
+Frontend: Semantic HTML5, Modern CSS3 (CSS Variables, Flexbox/Grid).
 
-* modernisera hemsidans innehåll och struktur
+Typography: Syne (Headings) and Inter (Body) via Google Fonts.
 
-* säkerställa att all information är korrekt, aktuell och lätt att förstå
+Interactions: Vanilla JavaScript (IntersectionObserver API for scroll animations and count-up logic).
 
-* förbättra användarupplevelsen för olika målgrupper
+Architecture: Single-page application (SPA) style with optimized performance and mobile-first responsiveness.
 
-* stärka hemsidan som primär informations- och kontaktkanal för mottagningen
+🚀 Key Features & Improvements
+Based on strategic growth audits, the site has been enhanced with:
 
-### **Mål**
+Animated Performance Metrics: A "Results in Motion" counter showcasing quantitative wins (e.g., +60% Revenue Growth at Spotify).
 
-* Att hemsidan på ett tydligt sätt speglar mottagningens nuvarande verksamhet, tjänster och arbetssätt
+Case Study Framework: Projects are structured using the Problem → Solution → Result methodology to prove ROI to potential clients.
 
-* Att nya patienter snabbt får en god förståelse för mottagningen och enkelt kan ta nästa steg (kontakt/bokning ska ske  på ett kontrollerat sätt då verksamheten är liten och behöver öka patienter efter kapacitet.)
+Pre-Qualification Funnel: An optimized contact system that categorizes leads by "Goal" (Scale, Market Entry, etc.) and "Timeline."
 
-* Att befintliga patienter enkelt hittar relevant information och kontaktvägar
+High-End UI/UX: A "Dark-Mode" aesthetic using a sophisticated palette (#0d0d0d, #e8c547) to appeal to executive stakeholders.
 
-* Att skapa en logisk och skalbar struktur som kan utvecklas vidare över tid
+📈 Strategic Roadmap (The Advisor Content)
+The site highlights four core pillars of expertise:
 
-### **Målgrupper**
+Growth Strategy: Navigating market dynamics to build sustainable revenue engines.
 
-**Primära målgrupper**
+Strategic Partnerships: Identifying and securing high-impact alliances (Global Retail & Fintech).
 
-* Nya patienter som söker information, trygghet och vägledning inför kontakt eller bokning
+Commercial Excellence: P&L optimization and GTM process streamlining.
 
-* Befintliga patienter som behöver snabb tillgång till kontaktuppgifter, praktisk information och uppdateringar
+Market Expansion: Localized insights for international footprint acceleration.
 
-**Sekundära målgrupper**
+📂 Repository Structure
+Plaintext
+├── index.html          # Main entry point (nicholas-konstantinidis.html)
+├── assets/             # Images, Brand Assets, and PDF CV
+├── css/                # Custom styling and animations (embedded or linked)
+└── js/                 # IntersectionObserver and Counter logic
+🤝 Consulting Inquiries
+I am currently open to advisory roles and board positions, specifically for startups preparing for Series A/B funding rounds. I offer a unique "Hybrid Sweat-Equity" model for high-potential ventures.
 
-* Samarbetspartners och remittenter
+Contact: [Insert your professional email]
 
-* Potentiella medarbetare som vill förstå mottagningens inriktning och värderingar
+LinkedIn:www.linkedin.com/in/nicholas-konstantinidis-793ab0a
 
-### **Effektmål**
-
-* Ökad tydlighet kring mottagningens erbjudande och kompetens
-
-* Förbättrad användarupplevelse och minskad osäkerhet hos nya patienter (inte direkt relevant då majoriteten av patienter kommer via rekommendation dock ska det se till att rekommendationen förstärks.). 
-
-* Fler relevanta och välgrundade förfrågningar via hemsidan
-
-* Effektivare kommunikation med befintliga patienter (vad kan vi koppla på här? via våra interna journal system etc, “ge” access till journaler, intyg etc)
-
-* En webbplats som upplevs som professionell, uppdaterad och förtroendeingivande
-
-### **Omfattning och nuläge**
-
-Arbetet med informationsstruktur har påbörjats, inklusive framtagning av sitemap och övergripande sidstruktur. Projektet omfattar:
-
-* genomgång och uppdatering av innehåll
-
-* eventuell omstrukturering av sidor baserat på sitemap (Mobile first design) 
-
-* förtydligande av budskap, målgruppsanpassning och call-to-actions
 
